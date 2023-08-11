@@ -1,0 +1,86 @@
+@font-face {
+    font-family: ZCOOLKuaiLe;
+    src: url("/styles_fonts/ZCOOLKuaiLe-Regular.ttf");
+}
+
+.AboutpageInfo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: #55ffbb;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+.AboutpageLinkIcons {
+    background-color: #9060ff;
+    border-color: #55ffbb;
+    border-radius: 50%;
+    border-style: solid;
+
+    margin: 0.5%;
+    padding: 0%;
+    width: 4%;
+}
+
+.AboutpageTitle {
+    font-family: ZCOOLKuaiLe;
+    color: #9060ff;
+    font-size: larger;
+    margin-left: 2%;
+}
+
+/* 模糊背景 效果层 */
+#blurLayer {
+    z-index: 3;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* 由Javascript操控的部分 */
+    visibility: hidden;
+    backdrop-filter: blur(0px);
+}
+
+#homepageAboutButtonAppear {
+    background-color: #00000000;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+#homepageAboutButtonAppear_Enabled {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -50px;
+}
+
+#homepageAboutButtonDisAppear_Enabled {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -50px;
+}
+
+/* 介绍页面区域全局 */
+#homepageAboutShowcase {
+    z-index: 5;
+    position: fixed;
+    min-height: 89%;
+    height: auto;
+    width: 60%;
+    left: 20%;
+    top: 100%;
+    transform: translate(0, -50px);
+}
+
+#homepageAboutIconAvatar {
+    position: relative;
+    top: 50px;
+    left: 40%;
+    width: 20%;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #55ffbb;
+}

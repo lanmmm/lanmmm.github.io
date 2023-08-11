@@ -1,0 +1,12 @@
+[
+    {
+        "index": "blg0000000000",				// the unique indentifier begin with "blg" or "prj"
+        "title": "the Title of the Content",	// [any string] The title
+        "subtitle": "Give a brief introduction",// [any string] The subtitle
+        "cover": "url of the cover",			// [a url or null] the link to the cover, or NULL is okay
+        "date": "YYYY.MM.DD | hh:mm",			// Upload date
+        "tags": ["tag1", "tag2", "tag3"],		// [an array of any string] tags
+        "url": "contents/blogs/0000000000.md"	// [a url] the link to the markdown file
+    }
+    // ...
+]

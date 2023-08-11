@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Center showcase title", 
+        "subtitle": "Center showcase subtitle", 
+        "url": "the url of the content",
+        "cover": "link to the cover of center showcase"	// and NULL is also okay
+    },
+    {
+        "title": "Left showcase title", 
+        "subtitle": "Left showcase subtitle", 
+        "url": "the url of the content",
+        "cover": "link to the cover of left showcase"	// and NULL is also okay
+    },
+    {
+        "title": "Right showcase title", 
+        "subtitle": "Right showcase subtitle", 
+        "url": "the url of the content",
+        "cover": "link to the cover of right showcase"	// and NULL is also okay
+    }
+]

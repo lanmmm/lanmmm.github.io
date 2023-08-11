@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Duawieh Space</title>
+    </head>
+    
+
+
+    <link rel="stylesheet" href="./styles/global.css" type="text/css"/>
+    <link rel="stylesheet" href="./styles/home/showcase.css" type="text/css"/>
+    <link rel="stylesheet" href="./styles/home/aboutme.css" type="text/css"/>
+
+
+
+    <body style="position: absolute; height: 100%;">
+        <!-- 底板区域 -->
+        <img id="homepageBackgroundIcon" src="./config/Global_Icon/Logo_HomepageBackground.png" alt="image loading failed">
+
+        
+        <!-- 顶部导航栏 -->
+        <div class="ShowCase" id="topBar">
+            <a href="index">
+                <img id="topBarIcon" src="./config/Global_Icon/Logo_TopBar.png" title="Welcome to Duawieh's Creation Space" alt="Icon loading failed"/>
+            </a>
+            <a href="https://github.com/Duawieh/theme_DuaCatPalette" target="_blank">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To visit the GitHub repo.">关于</button>
+            </a>
+            <a href="blogs">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To read my blogs.">博客</button>
+            </a>
+            <a href="projects">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To visit and download my projects.">项目</button>
+            </a>
+            <a href="index">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To turn to home page.">首页</button>
+            </a>
+        </div>
+
+
+        <!-- 首页展示区 -->
+        <div>
+            <!-- 左侧展示板 -->
+            <div class="ShowCase" id="homepageLeftShowcase" onmouseenter="moveout_showcasetitle(2)" onmouseleave="movein_showcasetitle(2)">
+                <a id="homepageLeftShowcase_Link">
+                    <img class="HomepageShowcaseCover" id="homepageLeftShowcase_Cover" alt="拉取封面信息失败"/>
+                </a>
+                <div class="HomepageShowcaseTitle" id="homepageLeftShowcaseTitle">
+                    <p class="ShowcaseTitle" id="homepageLeftShowcaseTitle_Title">正在获取标题信息</p>
+                    <p class="ShowcaseSubtitle" id="homepageLeftShowcaseTitle_Subtitle">正在获取副标题信息，等待简介内容加载...</p>
+                </div>
+            </div>
+
+            <!-- 右侧展示板 -->
+            <div class="ShowCase" id="homepageRightShowcase" onmouseenter="moveout_showcasetitle(3)" onmouseleave="movein_showcasetitle(3)">
+                <a id="homepageRightShowcase_Link">
+                    <img class="HomepageShowcaseCover" id="homepageRightShowcase_Cover" alt="拉取封面信息失败"/>
+                </a>
+                <div class="HomepageShowcaseTitle" id="homepageRightShowcaseTitle">
+                    <p class="ShowcaseTitle" id="homepageRightShowcaseTitle_Title">正在获取标题信息</p>
+                    <p class="ShowcaseSubtitle" id="homepageRightShowcaseTitle_Subtitle">正在获取副标题信息，等待简介内容加载...</p>
+                </div>
+            </div>
+
+            <!-- 中央展示板 -->
+            <div class="ShowCase" id="homepageCenterShowcase" onmouseenter="moveout_showcasetitle(1)" onmouseleave="movein_showcasetitle(1)">
+                <a id="homepageCenterShowcase_Link">
+                    <img class="HomepageShowcaseCover" id="homepageCenterShowcase_Cover" alt="拉取封面信息失败"/>
+                </a>
+                <div class="HomepageShowcaseTitle" id="homepageCenterShowcaseTitle">
+                    <p class="ShowcaseTitle" id="homepageCenterShowcaseTitle_Title" style="font-size: 150%;">正在获取标题信息</p>
+                    <p class="ShowcaseSubtitle" id="homepageCenterShowcaseTitle_Subtitle" style="font-size: 90%;">正在获取副标题信息，等待简介内容加载...</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- 模糊背景 效果层 -->
+        <div id="blurLayer" onclick="CONTROL_aboutpageAppear()"></div>
+
+
+        <!-- 作者信息页 -->
+        <div class="ShowCase" id="homepageAboutShowcase">
+            <!-- 展示窗弹出按钮 -->
+            <div id="homepageAboutButtonAppear" onmouseenter="CONTROL_aboutpageAppearButton_Enabled()" onmouseleave="CONTROL_aboutpageAppearButton_Unabled()" onclick="CONTROL_aboutpageAppear()">
+                <img id="homepageAboutButtonAppear_Enabled" src="./styles_images/homepageAboutButtonAppear_Enabled.png"/>
+                <img id="homepageAboutButtonDisAppear_Enabled" src="./styles_images/homepageAboutButtonAppear_Enabled_UpsideDown.png"/>
+                <img style="position: absolute; left: 50%; transform: translate(-50%, 0);" src="./styles_images/homepageAboutButtonAppear.png"/>
+            </div>
+            
+            <hr color="#9060ff" style="position: relative; top: 50px;"/>
+
+            <img id="homepageAboutIconAvatar" src="./config/Global_Icon/Logo_Avatar.png" alt="myAvatar"/>
+            <div>
+                <p class="AboutpageTitle">
+                    Author：
+                    <p class="AboutpageInfo" id="aboutpageAuthor">
+                        作者信息加载中...
+                    </p>
+                </p>
+                <p class="AboutpageTitle">
+                    E-mail：
+                    <p class="AboutpageInfo" id="aboutpageEmail">
+                        邮箱信息加载中...
+                    </p>
+                </p>
+                <p class="AboutpageTitle">
+                    个人简介：
+                    <p class="AboutpageInfo" id="aboutpageProfile">
+                        简介信息加载中...
+                    </p>
+                </p>
+                <p class="AboutpageTitle">
+                    You can find me on：
+                    <div class="AboutpageInfo" id="aboutpageLink">
+                        链接拉取中...
+                    </div>
+                </p>
+                <p class="AboutpageTitle">
+                    关于本站：
+                    <p class="AboutpageInfo" id="aboutpageSite">
+                        简介信息加载中...
+                    </p>
+                </p>
+
+                <!-- 原创声明，禁止更改 -->
+                <div>
+                    <hr color="#9060ff"/>
+                    <p class="AboutpageTitle">
+                        关于网站主题的开源声明：
+                        <p class="AboutpageInfo">
+                            此网站使用由 Duawieh 独立开发的 DuaCatPalette 主题。<br/><br/>
+                            如果您也想使用这个网站主题，可以在 GitHub 上直接 Fork 
+                            <a href="https://github.com/Duawieh/theme_DuaCatPalette" style="color: #9060ff;" target="_blank"><strong>这个仓库</strong></a>
+                            ，并按照仓库中 readme.md 文件提供的指导重新配置您的信息。如果您喜欢这个页面主题，记得为这个仓库点亮一颗 Star。
+                        </p>
+                    </p>
+                </div>
+                <!-- 原创声明，禁止更改 -->
+
+            </div>
+        </div>
+    </body>
+    
+
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./scripts/topbuttons.js" type="text/javascript"></script>
+    <script src="./scripts/home/anim_aboutpage.js" type="text/javascript"></script>
+    <script src="./scripts/home/anim_showcase.js" type="text/javascript"></script>
+    <script src="./scripts/home/file_aboutpage.js" type="text/javascript"></script>
+    <script src="./scripts/home/file_showcase.js" type="text/javascript"></script>
+
+</html>

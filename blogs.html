@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Duawieh Space</title>
+    </head>
+
+
+
+    <link rel="stylesheet" href="./styles/global.css" type="text/css"/>
+    <link rel="stylesheet" href="./styles/list/showcase.css" type="text/css"/>
+
+
+
+    <body style="position: absolute; height: 100%;">
+        <!-- 顶部导航栏 -->
+        <div class="ShowCase" id="topBar">
+            <a href="index">
+                <img id="topBarIcon" src="./config/Global_Icon/Logo_TopBar.png" title="Welcome to Duawieh's Creation Space" alt="Icon loading failed"/>
+            </a>
+            <a href="https://github.com/Duawieh/theme_DuaCatPalette" target="_blank">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To visit the GitHub repo.">关于</button>
+            </a>
+            <a href="blogs">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To read my blogs.">博客</button>
+            </a>
+            <a href="projects">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To visit and download my projects.">项目</button>
+            </a>
+            <a href="index">
+                <button class="TopButton" onmouseover="mouseOverButton(this)" onmouseleave="mouseLeaveButton(this)" title="To turn to home page.">首页</button>
+            </a>
+        </div>
+
+
+        <!-- 文章列表 -->
+        <div id="listpageList">
+            <p class="ListpageLog" style="font-size: smaller; text-align: center;">
+                正在查询符合条件的 content 中...
+            </p>
+        </div>
+
+
+        <!-- 筛选选项 -->
+        <div id="listpageTagcase">
+            <div class="ListpageShowcase" style="height: auto;">
+                <p class="ListpageLog">按标签检索：</p>
+                <div style="margin: 5%;" id="listpageCheckbox">
+                    <p style="color: #9060ff; font-size: smaller;">
+                        正在解析标签信息...
+                    </p>
+                </div>
+            </div>
+            <div class="ListpageShowcase" style="height: auto;">
+                <p class="ListpageLog" style="margin-bottom: 0px;">按标题搜索：</p>
+                <input type="search" id="listpageSearchbar" title="Type to search" oninput="CTRL_search(this)"/>
+            </div>
+        </div>
+    </body>
+
+
+
+    <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script src="./scripts/topbuttons.js" type="text/javascript"></script>
+    <script src="./scripts/list/file_blogs.js" type="text/javascript"></script>
+    <script src="./scripts/list/checkbox.js" type="text/javascript"></script>
+    <script src="./scripts/list/showcase.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        init_showcase();
+    </script>
+
+</html>

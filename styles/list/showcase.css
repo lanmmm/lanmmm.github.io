@@ -1,0 +1,124 @@
+@font-face {
+    font-family: ZCOOLKuaiLe;
+    src: url("/styles_fonts/ZCOOLKuaiLe-Regular.ttf");
+}
+
+.ListpageCheckboxButton {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #00000000;
+    border-color: #9060ff;
+    border-style: none;
+    color: #55ffbb;
+}
+
+.ListpageShowcase {
+    z-index: 1;
+    background-color: #2b2b2b;
+    box-shadow: 9px 1px 10px #000000;
+    /* 展示窗内容超出部分裁剪 */
+    overflow: hidden;
+
+    margin: 2%;
+    width: 96%;
+    height: 150px;
+}
+
+.ListpageLog {
+    font-family: 'ZCOOLKuaiLe';
+    font-size: large;
+    color: #9060ff;
+    margin: 5%;
+}
+
+.ListpageShowcaseCover {
+    position: relative;
+    width: 20%;
+    height: 90%;
+    object-fit: cover;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #2b2b2b;
+    transform: translate(5%, 3%);
+}
+
+.ListpageShowcaseDate {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: #55ffbb;
+    right: 0%;
+    bottom: 0;
+    margin: 0;
+}
+
+.ListpageShowcaseTag {
+    position: absolute;
+    font-family:'Courier New', Courier, monospace;
+    color: #55ffbb;
+    bottom: -3px;
+    margin: 0;
+    left: 50px;
+}
+
+.ListpageShowcaseTag_Title {
+    position: absolute;
+    font-family: 'ZCOOLKuaiLe';
+    color: #9060ff;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+}
+
+.ListpageShowcaseTextcase {
+    position: relative;
+    overflow: hidden;
+    top: 5%;
+    left: 3%;
+    width: 75%;
+    height: 90%;
+}
+
+.ListpageShowcaseCover, .ListpageShowcaseTextcase {
+    float: left;
+}
+
+.ListpageShowcaseTitle {
+    font-family: 'ZCOOLKuaiLe';
+    font-size: larger;
+    color: #9060ff;
+    width: 70%;
+    margin: 0;
+}
+
+.ListpageShowcaseSubtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    color: #9060ff;
+    overflow: hidden;
+    max-height: 50%;
+}
+
+#listpageList {
+    position: absolute; 
+    width: 70%; 
+    left: 0px;
+    top: 60px;
+}
+
+#listpageSearchbar {
+    background-color: #2b2b2b;
+    border-color: #9060ff;
+    border-style: solid;
+    border-radius: 5px;
+    color: #55ffbb;
+    width: 90%;
+    margin: 5%;
+    margin-top: 1%;
+}
+
+#listpageTagcase {
+    position: absolute;
+    width: 30%;
+    right: 0px;
+    top: 60px;
+}

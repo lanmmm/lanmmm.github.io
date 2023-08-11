@@ -1,0 +1,23 @@
+{
+    "Author": "NAME",	// [any string] your name
+    "E-mail": [			// [an array of e-mail address] your e-mail address
+    	"emailaddress1@email.com",
+        "emailaddress2@email.com"
+        // ...
+    ],
+    "link": [
+        {
+            "icon": "images url",	// [a url] the url of icon
+            "url": "link href",		// [a url] the url you want to link to
+            "alt": "name"			// [any string] the alternate name you want to show
+        },
+        {
+            "icon": "images url",
+            "url": "link href",
+            "alt": "name"
+        }
+        // ...
+    ],
+    "Profile": "your profile content.",					// [any string] your profile
+    "AboutTheSite": "The profile content of your site."	// [any string] About the site
+}
