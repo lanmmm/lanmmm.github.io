@@ -146,20 +146,17 @@ There a three showcase in homepage. Edit `contents/homepageShowcase/config.json`
     {
         "title": "Center showcase title", 
         "subtitle": "Center showcase subtitle", 
-        "url": "the url of the content",
-        "cover": "link to the cover of center showcase"	// and NULL is also okay
+        "index": "blg0000000000"					// the unique indentifier begin with "blg" or "prj"
     },
     {
         "title": "Left showcase title", 
         "subtitle": "Left showcase subtitle", 
-        "url": "the url of the content",
-        "cover": "link to the cover of left showcase"	// and NULL is also okay
+        "index": "blg0000000001"					// the unique indentifier begin with "blg" or "prj"
     },
     {
         "title": "Right showcase title", 
         "subtitle": "Right showcase subtitle", 
-        "url": "the url of the content",
-        "cover": "link to the cover of right showcase"	// and NULL is also okay
+        "index": "blg0000000002"					// the unique indentifier begin with "blg" or "prj"
     }
 ]
 ```

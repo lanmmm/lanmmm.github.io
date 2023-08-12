@@ -17,15 +17,48 @@ $.getJSON("/contents/homepageShowcase/config.json", function(data) {
     showcase_subtitle[2] = document.getElementById("homepageRightShowcaseTitle_Subtitle");
     showcase_link[2] = document.getElementById("homepageRightShowcase_Link");
     showcase_cover[2] = document.getElementById("homepageRightShowcase_Cover");
-    $.each(data, function(index, info) {
-        showcase_title[index].innerHTML = info["title"];
-        showcase_subtitle[index].innerHTML = info["subtitle"];
-        showcase_link[index].href = info["url"];
-        if (info["cover"] != null) {
-            showcase_cover[index].src = info["cover"];
+
+    $.each(data, function(i, info) {
+        let content_index = info["index"];
+        let content_type = content_index.substring(0, 3);
+        let content;
+        
+        // 关闭 jQuery 异步执行
+        $.ajaxSettings.async = false;
+        
+        if (content_type == "blg") {
+            $.getJSON("/contents/blogs/config.json", function(data) {
+                $.each(data, function(j, jnfo) {
+                    if (jnfo["index"] == content_index) {
+                        content = jnfo;
+                        return false;
+                    }
+                });
+            });
+        }
+        else
+        if (content_type == "prj") {
+            $.getJSON("/contents/projects/config.json", function(data) {
+                $.each(data, function(j, jnfo) {
+                    if (jnfo["index"] == content_index) {
+                        content = jnfo;
+                        return false;
+                    }
+                });
+            });
+        }
+        
+        // 开启 jQuery 异步执行
+        $.ajaxSettings.async = true;
+
+        showcase_title[i].innerHTML = info["title"];
+        showcase_subtitle[i].innerHTML = info["subtitle"];
+        showcase_link[i].href = "/content?" + content_index;
+        if (content.cover == undefined || content.cover == null) {
+            showcase_cover[i].src = NONE_COVER;
         }
         else {
-            showcase_cover[index].src = NONE_COVER;
+            showcase_cover[i].src = content.cover;
         }
     });
 });
