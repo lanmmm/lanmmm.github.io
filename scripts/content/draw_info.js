@@ -12,6 +12,7 @@ $.get(_url, function(md) {
     $.each(codes, function(i, info) {
         let parent = info.parentNode;
         if (parent.tagName == "PRE") {
+            if (info.className == undefined) info.className = "InlineCode";
             hljs.highlightBlock(info);
         } else {
             info.className = "InlineCode";
