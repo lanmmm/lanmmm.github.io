@@ -10,6 +10,6 @@ var lst_tag = new Array();
 // 关闭 jQuery 异步执行
 $.ajaxSettings.async = false;
 // 读取 json 配置文件，获取 content 列表
-$.getJSON("./contents/projects/config.json", function(data) { lst_source = data; });
+$.getJSON("/contents/projects/config.json", function(data) { lst_source = data; });
 // 开启 jQuery 异步执行
 $.ajaxSettings.async = true;

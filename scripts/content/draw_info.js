@@ -1,4 +1,4 @@
-var _url = "./" + content.url;
+var _url = "/" + content.url;
 var _tag = content.tags;
 var _title = content.title;
 var _date = content.date;

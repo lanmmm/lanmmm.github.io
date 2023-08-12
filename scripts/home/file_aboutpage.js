@@ -4,7 +4,7 @@ var mail = document.getElementById("aboutpageEmail");
 var link = document.getElementById("aboutpageLink");
 var site = document.getElementById("aboutpageSite");
 
-$.getJSON("./config/aboutME.json", function(info) {
+$.getJSON("/config/aboutME.json", function(info) {
     // 获取和覆写 Author
     athr.innerHTML = info["Author"];
     
