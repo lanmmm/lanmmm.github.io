@@ -1,4 +1,5 @@
 {
+    "Title": "Title",   // [any string] the title of your site
     "Author": "NAME",	// [any string] your name
     "E-mail": [			// [an array of e-mail address] your e-mail address
     	"emailaddress1@email.com",

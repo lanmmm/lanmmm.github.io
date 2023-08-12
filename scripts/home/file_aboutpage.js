@@ -3,8 +3,12 @@ var prof = document.getElementById("aboutpageProfile");
 var mail = document.getElementById("aboutpageEmail");
 var link = document.getElementById("aboutpageLink");
 var site = document.getElementById("aboutpageSite");
+var page = document.getElementById("homepageTitle");
 
 $.getJSON("/config/aboutME.json", function(info) {
+    // 获取和覆写 Title
+    page.innerHTML = info["Title"];
+
     // 获取和覆写 Author
     athr.innerHTML = info["Author"];
     

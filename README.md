@@ -60,6 +60,7 @@ Your profile information is written in `config/aboutME.json`, edit it at the sam
 
 ```json
 {
+    "Title": "Title",   // [any string] the title of your site
     "Author": "NAME",	// [any string] your name
     "E-mail": [			// [an array of e-mail address] your e-mail address
     	"emailaddress1@email.com",
