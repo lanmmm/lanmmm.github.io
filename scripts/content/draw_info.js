@@ -19,6 +19,7 @@ $.get(_url, function(md) {
     });
 });
 
+document.getElementById("contentpageTitle").innerHTML = _title;
 document.getElementById("contentpageSubpanelTitle").innerHTML = _title;
 document.getElementById("contentpageSubpanelDate").innerHTML = _date;
 var string_tags = "";
