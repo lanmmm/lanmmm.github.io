@@ -9,6 +9,17 @@ a {
     color: #55ffbb;
 }
 
+/* 代码高亮色彩使用 highlight.js 提供的 github-dark-dimmed 主题 */
+code {
+    /* 字体默认使用 IBM Plex Mono */
+    font-family: 'IBM_Plex_Mono', 'Courier New', Courier, monospace;
+    /* 此处的背景颜色取自 highlight.js 的代码块背景色 */
+    background-color: #22272e;
+    /* 为了保证行内代码的醒目以及与代码块的一致，字体色取自 highlight.js 的代码字体色 */
+    color: #adbac7;
+    font-size: 85%;
+}
+
 .ContentpageInfo {
     font-family: 'Courier New', Courier, monospace;
     color: #55ffbb;
@@ -25,15 +36,6 @@ a {
     font-family: 'ZCOOLKuaiLe';
     color: #9060ff;
     margin-left: 1%;
-}
-
-.InlineCode {
-    font-family: 'IBM_Plex_Mono', 'Courier New', Courier, monospace;
-    /* 此处的背景颜色取自 highlight.js 的代码块背景色 */
-    background-color: #1e1e1e;
-    /* 为了保证行内代码的醒目以及与代码块的一致，字体色取自 highlight.js 的代码字体色 */
-    color: #ffffff;
-    font-size: 85%;
 }
 
 #contentpageMain {

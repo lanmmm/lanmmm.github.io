@@ -8,7 +8,7 @@ var content_path = content_path.substring(1, content_path.length);
 $.ajaxSettings.async = false;
 
 if (content_type == "blg") {
-    $.getJSON("/contents/blogs/config.json", function(data) {
+    $.getJSON("./contents/blogs/config.json", function(data) {
         $.each(data, function(i, info) {
             if (info["index"] == content_path) {
                 content = info;
@@ -19,7 +19,7 @@ if (content_type == "blg") {
 }
 else
 if (content_type == "prj") {
-    $.getJSON("/contents/projects/config.json", function(data) {
+    $.getJSON("./contents/projects/config.json", function(data) {
         $.each(data, function(i, info) {
             if (info["index"] == content_path) {
                 content = info;
@@ -34,5 +34,5 @@ $.ajaxSettings.async = true;
 
 if (content == undefined) {
     alert("您查询的 content 不存在！\nThe requested content is not found!");
-    window.location.href = "/index";
+    window.location.href = "index.html";
 }
