@@ -46,7 +46,7 @@ code {
     min-height: 87%;
     height: auto;
     
-    background-color: #2b2b2bcc;
+    background-color: #2b2b2bd5;
     backdrop-filter: blur(10px);
 }
 
@@ -56,7 +56,7 @@ code {
     bottom: 3%;
     border-radius: 50%;
 
-    background-color: #2b2b2bcc;
+    background-color: #2b2b2bd5;
     backdrop-filter: blur(10px);
 }
 
@@ -69,7 +69,7 @@ code {
     max-height: 70%;
     height: auto;
     
-    background-color: #2b2b2bcc;
+    background-color: #2b2b2bd5;
     backdrop-filter: blur(10px);
 }
 

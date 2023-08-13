@@ -85,11 +85,9 @@ Your profile information is written in `config/aboutME.json`, edit it at the sam
 }
 ```
 
-If the json file you edited has worked, it will be performed below the homepage:
+If the json file you edited has worked, it will be performed below the homepage。
 
-如果您编辑的 json 文件生效了，它将在主页下方呈现：
-
-![Aboutpage](https://pic.imgdb.cn/item/64d47cab1ddac507cc3b7409.png)
+如果您编辑的 json 文件生效了，它将在主页下方呈现。
 
 I have prepared eight common icons for you in `config/Link_Icon`，you can also make more images if necessary.
 
