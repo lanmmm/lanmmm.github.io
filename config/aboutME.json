@@ -1,10 +1,8 @@
 {
-    "Title": "Title",   // [any string] the title of your site
-    "Author": "NAME",	// [any string] your name
-    "E-mail": [			// [an array of e-mail address] your e-mail address
-    	"emailaddress1@email.com",
-        "emailaddress2@email.com"
-        // ...
+    "Title": "lan_m's Blog",
+    "Author": "Lan_m",
+    "E-mail": [	
+    	"2867930696@qq.com"
     ],
     "link": [
         {
