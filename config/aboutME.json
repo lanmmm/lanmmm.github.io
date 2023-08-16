@@ -6,17 +6,11 @@
     ],
     "link": [
         {
-            "icon": "images url",	// [a url] the url of icon
-            "url": "link href",		// [a url] the url you want to link to
-            "alt": "name"			// [any string] the alternate name you want to show
-        },
-        {
-            "icon": "images url",
-            "url": "link href",
-            "alt": "name"
+            "icon": "config/Link_Icon/Logo_csdn.png",
+            "url": "https://blog.csdn.net/lan_m?spm=1000.2115.3001.5343",
+            "alt": "csdn"
         }
-        // ...
     ],
-    "Profile": "your profile content.",					// [any string] your profile
-    "AboutTheSite": "The profile content of your site."	// [any string] About the site
+    "Profile": "your profile content.",
+    "AboutTheSite": "The profile content of your site."
 }
